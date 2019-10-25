@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<content xmlns:j="http://www.jahia.org/jahia/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0">
+    <modules jcr:primaryType="jnt:modules">
+        <sitesettingsiframe j:dependencies="default"
+                          j:modulePriority="0"
+                          j:moduleType="module"
+                          j:title="siteSettingsIFrame"
+                          jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                          jcr:primaryType="jnt:module">
+                <sources jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                  jcr:primaryType="jnt:moduleVersionFolder"
+                  j:staticMountPointProviderKey="module-sitesettingsiframe-1.0-SNAPSHOT">
+                    <src jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                 jcr:primaryType="jnt:folder">
+                        <main jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                     jcr:primaryType="jnt:folder">
+                            <resources jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                             jcr:primaryType="jnt:folder">
+                                <jnt_iFrame jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                                 jcr:primaryType="jnt:nodeTypeFolder">
+                                    <html jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                              jcr:primaryType="jnt:templateTypeFolder">
+                                        <iFrame.jsp jcr:primaryType="jnt:viewFile"/>
+                                    </html>
+                                </jnt_iFrame>
+                                <META-INF jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                               jcr:primaryType="jnt:metaInfFolder">
+                                    <definitions.cnd jcr:primaryType="jnt:definitionFile"/>
+                                </META-INF>
+                            </resources>
+                        </main>
+                    </src>
+                </sources>
+                
+                <portlets jcr:primaryType="jnt:portletFolder"/>
+                <files jcr:primaryType="jnt:folder">
+                    <awe-vecto-white.svg jcr:mixinTypes="jmix:image" jcr:primaryType="jnt:file">
+                        <jcr:content j:lastExtractionDate="2019-10-25T11:38:38.111+02:00"
+                            jcr:mimeType="image/svg+xml"
+                            jcr:primaryType="jnt:resource"/>
+                    </awe-vecto-white.svg>
+                </files>
+                <contents jcr:primaryType="jnt:contentFolder"/>
+                <templates j:rootTemplatePath="/base" jcr:primaryType="jnt:templatesFolder">
+                    <files jcr:primaryType="jnt:folder">
+                        <download.png j:height="108"
+                             j:width="338"
+                             jcr:mixinTypes="jmix:image"
+                             jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                            <thumbnail jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                            <thumbnail2 jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                        </download.png>
+                        <decideapp-logo.png j:height="14"
+                                   j:width="20"
+                                   jcr:mixinTypes="jmix:image"
+                                   jcr:primaryType="jnt:file">
+                            <jcr:content jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                            <thumbnail jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                            <thumbnail2 jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                        </decideapp-logo.png>
+                    </files>
+                    <contents jcr:primaryType="jnt:contentFolder"/>
+                    <site-settings-base j:hiddenTemplate="false" jcr:primaryType="jnt:template">
+                        <j:translation_en jcr:language="en"
+                                 jcr:mixinTypes="mix:title"
+                                 jcr:primaryType="jnt:translation"
+                                 jcr:title="site-settings-base"/>
+                        <settings-panel j:applyOn="jnt:virtualsite"
+                               j:icon="#/modules/sitesettingsiframe/templates/files/decideapp-logo.png"
+                               j:view="settingsBootstrap3GoogleMaterialStyle"
+                               jcr:primaryType="jnt:contentTemplate">
+                            <pagecontent jcr:primaryType="jnt:contentList">
+                                <decideappio iFrameUrl="https://decideapp.io" jcr:primaryType="jnt:iFrame">
+                                    <j:translation_en jcr:language="en"
+                                          jcr:mixinTypes="mix:title"
+                                          jcr:primaryType="jnt:translation"
+                                          jcr:title="DecideApp.io"/>
+                                </decideappio>
+                            </pagecontent>
+                            <j:translation_en jcr:language="en"
+                                    jcr:mixinTypes="mix:title"
+                                    jcr:primaryType="jnt:translation"
+                                    jcr:title="DecideApp.IO"/>
+                        </settings-panel>
+                    </site-settings-base>
+                </templates>
+                
+            </sitesettingsiframe>
+    </modules>
+</content>
